@@ -11,13 +11,14 @@ namespace PracticeTwo.BusinessLogic.Models
         public string Name { get; set; }
         public string Lastname { get; set; }
         public int CI { get; set; }
-
+        public string Code { get; set; }
         public string Bloodtype { get; set; }
-        public Patient(string name, string lastname, int ci)
+        public Patient(string name, string lastname, int ci, string code)
         {
             Name = name;
             Lastname = lastname;
             CI = ci;
+            Code = code;    
             Bloodtype = GenerateRandomBloodtype();
         }
 

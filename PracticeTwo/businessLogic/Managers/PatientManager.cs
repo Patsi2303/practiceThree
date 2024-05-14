@@ -16,14 +16,14 @@ namespace PracticeTwo.BusinessLogic.Managers
         {
             _patients = new List<Patient>();
 
-            _patients.Add(new Patient("Alejandro", "Uriarte", 123456));
+            _patients.Add(new Patient("Alejandro", "Uriarte", 123456, "AU-123456"));
         }
 
-        public void AddPatient(string name, string lastname, int ci)
+        public void AddPatient(string name, string lastname, int ci, string code)
         {
             try
             {
-                _patients.Add(new Patient(name, lastname, ci));
+                _patients.Add(new Patient(name, lastname, ci, code));
             }
             catch(Exception ex)  
             {
